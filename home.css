@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ee8c68;
+    background-image: linear-gradient(315deg, #ee8c68 30%, #eb6b9d 80%);
+    font-family: 'Poppins', 'sans-serif';
+}
+header {
+    margin: 1%;
+}
+nav {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.logo {
+    height: 8vmax;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.nav-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fefae0;
+}
+ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+}
+ul li {
+    list-style-type: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom-color: rgb(254, 250, 224, 0.5);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 5px 50px;
+}
+ul li a {
+    text-decoration: none;
+    color: #fefae0;
+}
+ul li:first-child {
+    margin-top: 0;
+}
+ul li:hover {
+    opacity: 0.5;
+}
+.active {
+    display: flex;
+}
+@media screen and (min-width: 900px) {
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0 50px 0 0;
+        text-align: left;
+        border-bottom-style: none;
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/*--------------------- Welcome Part ---------------------*/
+.home {
+    max-width: 100vw;
+    height: 59vh;
+    padding: 5%;
+    margin: 1%;
+    background-color: #fefae0;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text1 {
+    font-size: 2.5vmax;
+    font-weight: 300;
+}
+.home .home-content .text2 {
+    font-size: 6vmax;
+    font-weight: 700;
+    margin-left: -5%;
+}
+.home .home-content .text3 {
+    font-size: 3.7vmax;
+    margin: 5px 0;
+    font-weight: 300;
+}
+.home .home-content .text3 span {
+    color: #f86594;
+    font-weight: 600;
+}
+.home .home-content a {
+    display: inline-block;
+    background-color: #ee8c68;
+    background-image: linear-gradient(315deg, #ee8c68 30%, #eb6b9d 80%);
+    font-size: 1.7vmax;
+    color: #fefae0;
+    padding: 1%;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-top: 5%;
+}
+.home .home-content a:hover {
+    color: #f86594;
+    background: none;
+    border-radius: 15px;
+    border-top: 3px solid #eb6b9d;
+    border-bottom: 3px solid #ee8c68;
+    border-right: 3px solid #ee8c68;
+    border-left: 3px solid #eb6b9d;
+}
+
+/*--------------------- About Me ---------------------*/
+.about {
+    max-width: 100vw;
+    height: 100%;
+    padding: 5%;
+    margin: 1%;
+    background-color: #fefae0;
+}
+.pic-dev {
+    height: 33vmax;
+    margin-top: 10%;
+}
+h2 {
+    color: #fefae0;
+    background-color: #ee8c68;
+    background-image: linear-gradient(315deg, #ee8c68 30%, #eb6b9d 80%);
+    border-radius: 15px;
+}
+.about, .title {
+    position: relative;
+    text-align: center;
+    font-size: 3vmax;
+    font-weight: 700;
+}
+.about, .about-me, .left img {
+    object-fit: cover;
+    justify-content: flex-end;
+}
+.about-content {
+    font-size: 2vmax;
+    font-weight: 500;
+}
+.about .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-me .left {
+    width: 53%;
+}
+.about .about-me .right {
+    width: 40%;
+}
+.about-text {
+    font-size: 2vmax;
+    text-align: left;
+}
+mark {
+    background: none;
+    color: #f86594;
+    font-size: 2vmax;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.about-detail {
+    font-size: 1.5vmax;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 4%;
+}
+
+/*--------------------- Project ---------------------*/
+.projects {
+    max-width: 100vw;
+    height: 100%;
+    padding: 5%;
+    margin: 1%;
+    background-color: #fefae0;
+}
